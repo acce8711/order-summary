@@ -21,7 +21,27 @@
 body {
     height: 100vh;
     background-color: var(--pale-blue);
+    color: var(--dark-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
 
+}
+
+p {
+    color: var(--desaturated-blue);
+    font-size: 15px;
+    line-height: 22px;
+}
+
+h1 {
+     font-size:  24px;
+     font-weight: 900;
+     margin-bottom: 15px;
+}
+
+h2 {
+    font-size:  15px;
+    font-weight: 900;
 }
 
 .container {
@@ -50,6 +70,62 @@ body {
     text-align: center;
 }
 
+.plan-info {
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.desc {
+    flex: 2;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.plan-info a {
+    font-size: 13px;
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+
+.plan-info a:hover {
+    text-decoration: none;
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.proceed {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 0;
+    background-color: var(--bright-blue);
+    color: var(--white);
+    font-weight: 700;
+    box-shadow: 0 10px 15px 2px rgb(208, 200, 240);
+}
+
+.proceed:hover {
+    opacity: 70%;
+    transition: 0.2s;
+}
+
+.cancel {
+    border: none;
+    background-color: transparent;
+    margin: 20px 0 0 0;
+    font-weight: 900;
+    color: var(--desaturated-blue);
+}
+
+.cancel:hover {
+    color: var(--dark-blue);
+    transition: 0.2s;
+}
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
